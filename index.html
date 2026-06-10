@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amber & Bean — Artisan Coffee House</title>
+  <meta name="description" content="ร้านกาแฟอาร์ติซานที่อบอุ่นและน่าประทับใจ เมนูพิเศษโดยบาริสต้ามืออาชีพ สั่งออนไลน์ได้ง่ายๆ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-icon">☕</span>
+      <span class="logo-text">Amber &amp; Bean</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">หน้าหลัก</a></li>
+      <li><a href="#menu-section" class="nav-link">เมนู</a></li>
+      <li><a href="#order-section" class="nav-link">สั่งกาแฟ</a></li>
+      <li><a href="#chef-section" class="nav-link">บาริสต้า</a></li>
+      <li><a href="#reservation-section" class="nav-link">จองโต๊ะ</a></li>
+      <li><a href="#location-section" class="nav-link">ที่ตั้ง</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+<div class="hero-bg"></div>
+
+  <div class="hero-content">
+    <p class="hero-tagline">ยินดีต้อนรับสู่</p>
+    <h1 class="hero-title">Amber &amp; Bean</h1>
+    <p class="hero-subtitle">ร้านกาแฟอาร์ติซานที่อบอุ่น<br>ทุกหยดคือความใส่ใจ ทุกช้อนคือความหลงใหล</p>
+    <div class="hero-cta">
+      <a href="#order-section" class="btn btn-primary" id="hero-order-btn">สั่งกาแฟตอนนี้</a>
+      <a href="#menu-section" class="btn btn-secondary" id="hero-menu-btn">ดูเมนูทั้งหมด</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">15+</span><span class="stat-label">ปีแห่งความหลงใหล</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">50+</span><span class="stat-label">เมนูพิเศษ</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">คะแนนรีวิว</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    <span>เลื่อนลง</span>
+  </div>
+</section>
+
+<!-- ===== PHOTO GALLERY STRIP ===== -->
+<div class="gallery-strip" id="gallery-strip">
+  <div class="gallery-track">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&q=80&fit=crop" alt="Coffee beans" loading="lazy" />
+      <span class="gallery-label">Coffee Beans</span>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80&fit=crop" alt="Cozy cafe" loading="lazy" />
+      <span class="gallery-label">Cozy Atmosphere</span>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80&fit=crop" alt="Latte art" loading="lazy" />
+      <span class="gallery-label">Latte Art</span>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=500&q=80&fit=crop" alt="Barista" loading="lazy" />
+      <span class="gallery-label">Expert Barista</span>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1521302200778-33500795e128?w=500&q=80&fit=crop" alt="Espresso" loading="lazy" />
+      <span class="gallery-label">Espresso</span>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=80&fit=crop" alt="Croissant" loading="lazy" />
+      <span class="gallery-label">Fresh Pastries</span>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&q=80&fit=crop" alt="Matcha" loading="lazy" />
+      <span class="gallery-label">Matcha Latte</span>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1485808191679-5f86510bd9d7?w=500&q=80&fit=crop" alt="Pour over" loading="lazy" />
+      <span class="gallery-label">Pour Over</span>
+    </div>
+  </div>
+</div>
+
+
+<section class="menu-showcase" id="menu-section">
+  <div class="section-header">
+    <p class="section-tag">รายการพิเศษ</p>
+    <h2 class="section-title">เมนูแนะนำ</h2>
+    <p class="section-desc">คัดสรรเมนูที่ดีที่สุดโดยบาริสต้ามืออาชีพของเรา</p>
+  </div>
+
+  <div class="menu-filters">
+    <button class="filter-btn active" data-filter="all" id="filter-all">ทั้งหมด</button>
+    <button class="filter-btn" data-filter="hot" id="filter-hot">☕ Hot</button>
+    <button class="filter-btn" data-filter="cold" id="filter-cold">🧊 Cold</button>
+    <button class="filter-btn" data-filter="special" id="filter-special">✨ Signature</button>
+    <button class="filter-btn" data-filter="food" id="filter-food">🥐 อาหาร</button>
+  </div>
+
+  <div class="menu-grid" id="menuGrid">
+    <!-- Cards injected by JS -->
+  </div>
+</section>
+
+<!-- ===== ORDERING SYSTEM ===== -->
+<section class="order-section" id="order-section">
+  <div class="section-header">
+    <p class="section-tag">สั่งง่าย จ่ายสะดวก</p>
+    <h2 class="section-title">สั่งกาแฟออนไลน์</h2>
+    <p class="section-desc">เลือกเมนู ปรับแต่งออปชันตามใจ แล้วกดสั่ง!</p>
+  </div>
+
+  <div class="order-layout">
+    <!-- LEFT: Coffee Menu List -->
+    <div class="order-menu-list" id="orderMenuList">
+      <div class="order-menu-header">
+        <h3>เลือกเมนู</h3>
+        <span class="menu-count" id="menuCount">8 รายการ</span>
+      </div>
+      <div class="order-items" id="orderItems">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- MIDDLE: Customizer -->
+    <div class="order-customizer" id="orderCustomizer">
+      <div class="customizer-placeholder" id="customizerPlaceholder">
+        <div class="placeholder-icon">☕</div>
+        <h3>เลือกเมนูที่ต้องการ</h3>
+        <p>คลิกเมนูด้านซ้ายเพื่อปรับแต่งออปชัน</p>
+      </div>
+      <div class="customizer-content hidden" id="customizerContent">
+        <div class="customizer-header">
+          <div class="selected-coffee-art" id="selectedCoffeeArt"></div>
+          <div class="customizer-title-area">
+            <h3 id="customizerName">Latte</h3>
+            <p id="customizerDesc">กาแฟลาเต้เข้มข้น</p>
+            <div class="customizer-base-price">ราคาเริ่มต้น: <span id="basePriceDisplay">$4.00</span></div>
+          </div>
+        </div>
+
+        <!-- Size -->
+        <div class="option-group">
+          <h4 class="option-label"><span class="option-icon">📏</span> ขนาดแก้ว</h4>
+          <div class="size-options" id="sizeOptions">
+            <label class="size-card" id="size-reg">
+              <input type="radio" name="size" value="reg" checked />
+              <div class="size-card-inner">
+                <span class="size-cup">🥤</span>
+                <span class="size-name">Regular</span>
+                <span class="size-price">+$0.00</span>
+              </div>
+            </label>
+            <label class="size-card" id="size-large">
+              <input type="radio" name="size" value="large" />
+              <div class="size-card-inner">
+                <span class="size-cup" style="font-size:1.5rem">🥤</span>
+                <span class="size-name">Large</span>
+                <span class="size-price">+$1.50</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Sweetness -->
+        <div class="option-group">
+          <h4 class="option-label"><span class="option-icon">🍬</span> ระดับความหวาน</h4>
+          <div class="sweetness-options" id="sweetnessOptions">
+            <label class="sweetness-btn">
+              <input type="radio" name="sweetness" value="0" />
+              <span>0% ไม่หวาน</span>
+            </label>
+            <label class="sweetness-btn">
+              <input type="radio" name="sweetness" value="50" checked />
+              <span>50% หวานน้อย</span>
+            </label>
+            <label class="sweetness-btn">
+              <input type="radio" name="sweetness" value="100" />
+              <span>100% หวานปกติ</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Toppings -->
+        <div class="option-group">
+          <h4 class="option-label"><span class="option-icon">✨</span> Toppings เพิ่มเติม</h4>
+          <div class="topping-options" id="toppingOptions">
+            <label class="topping-card" id="topping-shot">
+              <input type="checkbox" name="topping" value="shot" data-price="1.00" />
+              <div class="topping-inner">
+                <span class="topping-emoji">☕</span>
+                <span class="topping-name">Extra Shot</span>
+                <span class="topping-price">+$1.00</span>
+              </div>
+            </label>
+            <label class="topping-card" id="topping-whip">
+              <input type="checkbox" name="topping" value="whip" data-price="0.50" />
+              <div class="topping-inner">
+                <span class="topping-emoji">🍦</span>
+                <span class="topping-name">วิปครีม</span>
+                <span class="topping-price">+$0.50</span>
+              </div>
+            </label>
+            <label class="topping-card" id="topping-syrup">
+              <input type="checkbox" name="topping" value="syrup" data-price="0.50" />
+              <div class="topping-inner">
+                <span class="topping-emoji">🍯</span>
+                <span class="topping-name">น้ำเชื่อมวานิลลา</span>
+                <span class="topping-price">+$0.50</span>
+              </div>
+            </label>
+            <label class="topping-card" id="topping-oat">
+              <input type="checkbox" name="topping" value="oat" data-price="0.75" />
+              <div class="topping-inner">
+                <span class="topping-emoji">🌾</span>
+                <span class="topping-name">นมโอ๊ต</span>
+                <span class="topping-price">+$0.75</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Price Summary -->
+        <div class="price-breakdown" id="priceBreakdown">
+          <div class="price-row"><span>ราคาเครื่องดื่ม</span><span id="priceBase">$4.00</span></div>
+          <div class="price-row" id="priceSizeRow" style="display:none"><span>ขนาด Large</span><span>+$1.50</span></div>
+          <div class="price-row topping-price-rows" id="priceToppingRows"></div>
+          <div class="price-divider"></div>
+          <div class="price-row price-total"><span>ราคาสุทธิ</span><span id="totalPriceDisplay">$4.00</span></div>
+        </div>
+
+        <button class="btn btn-add-cart" id="addToCartBtn" onclick="addToCart()">
+          <span>🛒</span> ใส่ตะกร้า
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT: Cart -->
+    <div class="order-cart" id="orderCart">
+      <div class="cart-header">
+        <h3>🛒 ตะกร้าสินค้า</h3>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty" id="cartEmpty">
+          <div class="empty-icon">🛒</div>
+          <p>ตะกร้าของคุณยังว่างอยู่</p>
+          <span>เลือกเมนูเพื่อเริ่มสั่ง</span>
+        </div>
+      </div>
+      <div class="cart-summary" id="cartSummary" style="display:none">
+        <div class="summary-row"><span>รายการทั้งหมด</span><span id="summaryCount">0 รายการ</span></div>
+        <div class="summary-row summary-total"><span>ยอดรวม</span><span id="summaryTotal">$0.00</span></div>
+        <button class="btn btn-checkout" id="checkoutBtn" onclick="triggerCheckoutLoading()">
+          ชำระเงิน →
+        </button>
+      </div>
+      <div class="cart-empty-warning" id="cartEmptyWarning" style="display:none">
+        <p>⚠️ กรุณาเลือกสินค้าก่อนชำระเงิน</p>
+        <button class="btn btn-checkout btn-disabled" disabled>ชำระเงิน →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHEF STORY ===== -->
+<section class="chef-section" id="chef-section">
+  <div class="chef-content">
+    <div class="chef-image-wrap">
+      <div class="chef-portrait">
+        <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="chefBg" cx="50%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#c8956c"/>
+              <stop offset="100%" stop-color="#8b4513"/>
+            </radialGradient>
+          </defs>
+          <circle cx="150" cy="175" r="140" fill="url(#chefBg)" opacity="0.2"/>
+          <!-- Body -->
+          <rect x="80" y="240" width="140" height="100" rx="15" fill="#fff" opacity="0.9"/>
+          <!-- Head -->
+          <ellipse cx="150" cy="190" rx="55" ry="65" fill="#d4956c"/>
+          <!-- Chef hat -->
+          <rect x="100" y="130" width="100" height="15" rx="7" fill="white"/>
+          <rect x="110" y="95" width="80" height="40" rx="10" fill="white"/>
+          <!-- Face features -->
+          <circle cx="133" cy="185" r="7" fill="#5c3317"/>
+          <circle cx="167" cy="185" r="7" fill="#5c3317"/>
+          <path d="M135 210 Q150 225 165 210" stroke="#5c3317" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- Apron -->
+          <path d="M95 255 L120 255 L120 330 L85 330 Z" fill="#c8956c" opacity="0.8"/>
+          <path d="M180 255 L205 255 L215 330 L180 330 Z" fill="#c8956c" opacity="0.8"/>
+          <!-- Coffee cup in hand -->
+          <rect x="195" y="270" width="35" height="30" rx="5" fill="#8b4513"/>
+          <path d="M230 280 Q245 280 245 290 Q245 300 230 298" fill="none" stroke="#8b4513" stroke-width="5"/>
+        </svg>
+      </div>
+      <div class="chef-badge">Champion Barista 2019</div>
+    </div>
+    <div class="chef-text">
+      <p class="section-tag">เรื่องราวของเรา</p>
+      <h2 class="section-title">พบกับ Chef Aria</h2>
+      <p class="chef-quote">"กาแฟดีไม่ได้เกิดจากโชค — มันเกิดจากความรัก ความอดทน และกาแฟเมล็ดที่ดีที่สุด"</p>
+      <div class="chef-story">
+        <p>Aria เริ่มต้นเส้นทางบาริสต้าของเธอจากร้านกาแฟเล็กๆ ในเชียงใหม่ เมื่อ 15 ปีก่อน ด้วยความหลงใหลในกาแฟไทยที่ถูกมองข้ามโดยโลก เธอเดินทางไปฝึกฝนที่เอธิโอเปีย โคลอมเบีย และญี่ปุ่น</p>
+        <p>ปัจจุบัน Aria เป็นเจ้าของ Amber & Bean และนำเสนอกาแฟ Specialty Grade จากไร่คู่ค้าที่เธอไว้วางใจ ทุกแก้วผ่านการคัดสรรและชงโดยมือของเธอด้วยความตั้งใจ</p>
+      </div>
+      <div class="chef-awards">
+        <div class="award"><span class="award-icon">🏆</span><span>World Barista Championship 2019</span></div>
+        <div class="award"><span class="award-icon">🌿</span><span>Sustainable Coffee Advocate</span></div>
+        <div class="award"><span class="award-icon">📚</span><span>Q Grader Certified</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESERVATION SECTION ===== -->
+<section class="reservation-section" id="reservation-section">
+  <div class="reservation-bg"></div>
+  <div class="reservation-content">
+    <div class="section-header">
+      <p class="section-tag" style="color:#d4a76a">จองโต๊ะออนไลน์</p>
+      <h2 class="section-title" style="color:#fff">สำรองที่นั่งล่วงหน้า</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.75)">เพื่อประสบการณ์ที่ดีที่สุด แนะนำให้จองล่วงหน้า</p>
+    </div>
+    <form class="reservation-form" id="reservationForm" onsubmit="submitReservation(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="res-name">ชื่อ-นามสกุล</label>
+          <input type="text" id="res-name" placeholder="กรอกชื่อของคุณ" required />
+        </div>
+        <div class="form-group">
+          <label for="res-phone">เบอร์โทรศัพท์</label>
+          <input type="tel" id="res-phone" placeholder="0XX-XXX-XXXX" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="res-date">วันที่</label>
+          <input type="date" id="res-date" required />
+        </div>
+        <div class="form-group">
+          <label for="res-time">เวลา</label>
+          <select id="res-time" required>
+            <option value="">เลือกเวลา</option>
+            <option value="09:00">09:00 น.</option>
+            <option value="10:00">10:00 น.</option>
+            <option value="11:00">11:00 น.</option>
+            <option value="12:00">12:00 น.</option>
+            <option value="13:00">13:00 น.</option>
+            <option value="14:00">14:00 น.</option>
+            <option value="15:00">15:00 น.</option>
+            <option value="16:00">16:00 น.</option>
+            <option value="17:00">17:00 น.</option>
+            <option value="18:00">18:00 น.</option>
+            <option value="19:00">19:00 น.</option>
+            <option value="20:00">20:00 น.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="res-guests">จำนวนคน</label>
+          <select id="res-guests" required>
+            <option value="">เลือกจำนวน</option>
+            <option value="1">1 คน</option>
+            <option value="2">2 คน</option>
+            <option value="3">3 คน</option>
+            <option value="4">4 คน</option>
+            <option value="5">5 คน</option>
+            <option value="6">6+ คน</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label for="res-note">หมายเหตุพิเศษ</label>
+        <textarea id="res-note" placeholder="เช่น ต้องการโต๊ะริมหน้าต่าง, มีอาหารที่แพ้..." rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-reserve" id="reserveBtn">
+        ยืนยันการจอง ✓
+      </button>
+    </form>
+    <div class="reservation-success hidden" id="reservationSuccess">
+      <div class="success-icon">✅</div>
+      <h3>จองสำเร็จ!</h3>
+      <p id="reservationSuccessMsg">ขอบคุณที่เลือก Amber & Bean</p>
+      <button class="btn btn-secondary" onclick="resetReservation()">จองอีกครั้ง</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION SECTION ===== -->
+<section class="location-section" id="location-section">
+  <div class="section-header">
+    <p class="section-tag">มาหาเรา</p>
+    <h2 class="section-title">ที่ตั้งร้าน</h2>
+    <p class="section-desc">หาเราเจอง่ายๆ ใจกลางเมือง</p>
+  </div>
+  <div class="location-layout">
+    <div class="location-info">
+      <div class="info-card">
+        <span class="info-icon">📍</span>
+        <div>
+          <strong>ที่อยู่</strong>
+          <p>123 ถ.นิมมานเหมินทร์ ซ.11<br>อ.เมือง จ.เชียงใหม่ 50200</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">🕐</span>
+        <div>
+          <strong>เวลาเปิด-ปิด</strong>
+          <p>จันทร์ - ศุกร์: 08:00 – 21:00<br>เสาร์ - อาทิตย์: 07:00 – 22:00</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">📞</span>
+        <div>
+          <strong>ติดต่อ</strong>
+          <p>Tel: 053-XXX-XXXX<br>Line: @ambernbean</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">🚗</span>
+        <div>
+          <strong>การเดินทาง</strong>
+          <p>ที่จอดรถฟรี 30 คัน<br>ใกล้ห้างโรบินสัน 200 ม.</p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-btn" id="fb-btn">Facebook</a>
+        <a href="#" class="social-btn" id="ig-btn">Instagram</a>
+        <a href="#" class="social-btn" id="line-btn">LINE OA</a>
+      </div>
+    </div>
+    <div class="location-map">
+      <div class="map-container" id="mapContainer">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" class="map-svg">
+          <rect width="600" height="400" fill="#f0e8d8"/>
+          <!-- Streets -->
+          <rect x="0" y="160" width="600" height="25" fill="#d4c4a0" opacity="0.8"/>
+          <rect x="0" y="280" width="600" height="20" fill="#d4c4a0" opacity="0.8"/>
+          <rect x="150" y="0" width="20" height="400" fill="#d4c4a0" opacity="0.8"/>
+          <rect x="350" y="0" width="20" height="400" fill="#d4c4a0" opacity="0.8"/>
+          <rect x="480" y="0" width="15" height="400" fill="#d4c4a0" opacity="0.7"/>
+          <!-- Buildings -->
+          <rect x="30" y="30" width="110" height="120" rx="4" fill="#c4b090"/>
+          <rect x="40" y="40" width="90" height="100" rx="3" fill="#ccc0a0"/>
+          <rect x="180" y="30" width="160" height="120" rx="4" fill="#c4b090"/>
+          <rect x="190" y="40" width="140" height="100" rx="3" fill="#ccc0a0"/>
+          <rect x="380" y="30" width="90" height="120" rx="4" fill="#c4b090"/>
+          <rect x="390" y="40" width="70" height="100" rx="3" fill="#ccc0a0"/>
+          <rect x="30" y="200" width="110" height="70" rx="4" fill="#c4b090"/>
+          <rect x="180" y="200" width="160" height="70" rx="4" fill="#c4b090"/>
+          <rect x="380" y="200" width="90" height="70" rx="4" fill="#c4b090"/>
+          <rect x="30" y="310" width="110" height="80" rx="4" fill="#c4b090"/>
+          <rect x="180" y="310" width="160" height="80" rx="4" fill="#c4b090"/>
+          <!-- Park -->
+          <circle cx="460" cy="340" r="40" fill="#8fbc8f" opacity="0.6"/>
+          <circle cx="445" cy="325" r="15" fill="#5a9a5a" opacity="0.7"/>
+          <circle cx="475" cy="330" r="18" fill="#5a9a5a" opacity="0.7"/>
+          <circle cx="460" cy="355" r="12" fill="#5a9a5a" opacity="0.7"/>
+          <!-- Shop Location Marker -->
+          <circle cx="260" cy="175" r="18" fill="#c0392b"/>
+          <circle cx="260" cy="175" r="10" fill="white"/>
+          <circle cx="260" cy="175" r="5" fill="#c0392b"/>
+          <path d="M260 193 L255 208 L260 205 L265 208 Z" fill="#c0392b"/>
+          <!-- Label -->
+          <rect x="185" y="130" width="150" height="30" rx="8" fill="white" opacity="0.9"/>
+          <text x="260" y="150" text-anchor="middle" font-size="11" fill="#5c3317" font-weight="bold">☕ Amber &amp; Bean</text>
+          <!-- Street names -->
+          <text x="300" y="155" text-anchor="middle" font-size="9" fill="#888">ถ.นิมมานเหมินทร์</text>
+          <text x="300" y="270" text-anchor="middle" font-size="9" fill="#888">ถ.สุเทพ</text>
+        </svg>
+        <div class="map-overlay">
+          <button class="map-directions-btn" id="directionsBtn" onclick="openDirections()">🗺️ นำทาง Google Maps</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="footer-logo">☕ Amber &amp; Bean</div>
+      <p>ร้านกาแฟอาร์ติซานที่อบอุ่น<br>เปิดบริการทุกวันตั้งแต่เช้าตรู่</p>
+    </div>
+    <div class="footer-links">
+      <h4>เมนูลิงค์</h4>
+      <a href="#menu-section">เมนูกาแฟ</a>
+      <a href="#order-section">สั่งออนไลน์</a>
+      <a href="#reservation-section">จองโต๊ะ</a>
+      <a href="#chef-section">เกี่ยวกับเรา</a>
+    </div>
+    <div class="footer-hours">
+      <h4>เวลาเปิดทำการ</h4>
+      <p>จ-ศ: 08:00 – 21:00</p>
+      <p>ส-อ: 07:00 – 22:00</p>
+    </div>
+    <div class="footer-newsletter">
+      <h4>รับส่วนลดพิเศษ</h4>
+      <p>สมัครรับข่าวสารและโปรโมชัน</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="อีเมลของคุณ" id="newsletterEmail" />
+        <button onclick="subscribeNewsletter()" id="subscribeBtn">ส่ง</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Amber &amp; Bean Coffee House. All rights reserved.</p>
+    <p>Crafted with ☕ and ❤️</p>
+  </div>
+</footer>
+
+<!-- ===== LOADING OVERLAY ===== -->
+<div class="loading-overlay hidden" id="loadingOverlay">
+  <div class="loading-content">
+    <div class="barista-animation">
+      <div class="coffee-machine">
+        <div class="machine-body">
+          <div class="steam-line s1"></div>
+          <div class="steam-line s2"></div>
+          <div class="steam-line s3"></div>
+        </div>
+      </div>
+      <div class="coffee-cup-anim">
+        <div class="cup-fill"></div>
+      </div>
+    </div>
+    <p class="loading-text" id="loadingText">กำลังส่งออเดอร์ไปยังบาริสต้า...</p>
+    <div class="loading-dots">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SUCCESS OVERLAY ===== -->
+<div class="success-overlay hidden" id="successOverlay">
+  <div class="success-content">
+    <div class="success-coffee-anim">
+      <div class="checkmark">✓</div>
+    </div>
+    <h2>รับออเดอร์สำเร็จ!</h2>
+    <p>กรุณารอเรียกคิว</p>
+    <div class="queue-number" id="queueNumber">
+      <span class="queue-label">หมายเลขคิวของคุณ</span>
+      <span class="queue-num" id="queueNum">A-01</span>
+    </div>
+    <div class="queue-info">
+      <p>⏱️ เวลารอโดยประมาณ: <strong>5-10 นาที</strong></p>
+      <p>📢 บาริสต้าจะเรียกชื่อเมื่อพร้อม</p>
+    </div>
+    <button class="btn btn-primary" id="newOrderBtn" onclick="resetOrder()">
+      สั่งรายการใหม่ →
+    </button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
